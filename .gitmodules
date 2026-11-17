@@ -1,0 +1,3 @@
+[submodule "upstream/MacKernelSDK"]
+	path = upstream/MacKernelSDK
+	url = https://github.com/acidanthera/MacKernelSDK.git

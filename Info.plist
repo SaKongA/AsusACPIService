@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.kayson.AsusACPIService</string>
+    <key>CFBundleExecutable</key>
+    <string>AsusACPIService</string>
+    <key>CFBundleName</key>
+    <string>AsusACPIService</string>
+    <key>CFBundlePackageType</key>
+    <string>KEXT</string>
+    <key>CFBundleVersion</key>
+    <string>0.1.0</string>
+    <key>IOKitPersonalities</key>
+    <dict>
+        <key>AsusACPIService</key>
+        <dict>
+            <key>CFBundleIdentifier</key>
+            <string>com.kayson.AsusACPIService</string>
+            <key>IOClass</key>
+            <string>AsusACPIService</string>
+            <key>IOProviderClass</key>
+            <string>IOACPIPlatformDevice</string>
+            <key>IONameMatch</key>
+            <string>PNP0C14</string>
+            <key>IOPropertyMatch</key>
+            <dict>
+                <key>_UID</key>
+                <string>ATK</string>
+            </dict>
+        </dict>
+    </dict>
+    <key>OSBundleLibraries</key>
+    <dict>
+        <key>com.apple.iokit.IOACPIFamily</key>
+        <string>1.4</string>
+        <key>com.apple.kpi.iokit</key>
+        <string>8.0.0</string>
+        <key>com.apple.kpi.libkern</key>
+        <string>8.0.0</string>
+        <key>com.apple.kpi.mach</key>
+        <string>8.0.0</string>
+    </dict>
+</dict>
+</plist>
